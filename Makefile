@@ -68,7 +68,6 @@ runlua: hostenv
 	build/hostenv.sh $(realpath host) $(LUA_MODULEDIR) $(LUA_LIBRARYDIR) "lua -i build/setup.lua"
 
 runshell: hostenv
-	build/hostenv.sh $(realpath host) $(LUA_MODULEDIR) $(LUA_LIBRARYDIR) $$SHELL
 
 hostclean: clean
 	rm -rf host
