@@ -65,7 +65,7 @@ runuhttpd: hostenv
 	build/hostenv.sh $(realpath host) $(LUA_MODULEDIR) $(LUA_LIBRARYDIR) "$(realpath host)/usr/sbin/uhttpd -p 8080 -h $(realpath host)/www -f"
 
 runlua: hostenv
-	build/hostenv.sh $(realpath host) $(LUA_MODULEDIR) $(LUA_LIBRARYDIR) "lua -i build/setup.lua"
+	build/hostenv.sh $(realpath host) $(LUA_MODULEDIR) $(LUA_LIBRARYDIR) "echo Cosgrid"
 
 runshell: hostenv
 
